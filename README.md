@@ -1,4 +1,4 @@
-# z-element
+# z-ui
 
 ## Project setup
 ```
