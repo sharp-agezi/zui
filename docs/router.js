@@ -11,9 +11,7 @@ const routers = new createRouter({
             path:"/",
             component:import("./components/layout"),
             children:[
-                {path: '', name:"home", component: pages.home},
-                {path: 'worklist', name:"workList", component: pages.workList},
-                {path: 'content', name:"content", component: pages.content},
+                {path: '', name:"home", component: pages.home}
             ]
         }
     ]

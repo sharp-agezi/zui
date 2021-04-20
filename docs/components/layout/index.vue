@@ -1,18 +1,18 @@
 <template>
-  <el-container>
-    <el-header>
-      <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-      <el-menu-item index="home">首页</el-menu-item>
-      <el-menu-item index="workList">工作经历</el-menu-item>
-      <el-menu-item index="content">内容中心</el-menu-item>
-    </el-menu>
-    </el-header>
-    <el-main><router-view></router-view></el-main>
-  </el-container>
+  <div>
+    <z-header></z-header>
+    <session>
+      <router-view></router-view>
+    </session>
+  </div>
 </template>
 <script>
+import ZHeader from "./header"
 export default {
   name: 'App',
+  components:{
+    ZHeader,
+  },
   data(){
     return {
       activeIndex:null

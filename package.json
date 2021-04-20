@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "commit": "git add . && git cz",
     "dev": "yarn serve",
-    "docs:dev": "webpack-dev-server",
+    "docs:dev": "webpack-dev-server  --progress --colors --devtool source-map --hot --inline",
     "docs:build": "webpack",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "commit": "git add . && git cz"
   },
   "dependencies": {
     "core-js": "^3.6.5",
